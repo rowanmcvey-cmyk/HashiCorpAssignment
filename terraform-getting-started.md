@@ -2,11 +2,19 @@
 
 Terraform is the most popular language for defining and provisioning infrastructure as code (IaC).
 
-To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
+## Learning Objectives
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
+After you finish this lesson, you will be able to:
+- Install Terraform on your local machine
+- Create a basic Terraform configuration file
+- Initialize Terraform and install a Terraform provider
+- Provision and destroy Terraform resources
 
-Most people find it easiest to create a new directory on their local machine and create Terraform configuration code inside it.
+To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and find the appropriate installation package for your system. Download and install it.
+
+## Create a Terraform configuation file
+
+Create a new directory on your local machine to store your Terraform configuration files.
 
 ```shell
 $ mkdir terraform-demo
@@ -19,7 +27,7 @@ Next, create a file for your Terraform configuration code.
 $ touch main.tf
 ```
 
-Paste the following lines into the file.
+Open the file with a text editor and paste the following lines into the file.
 
 ```hcl
 terraform {
@@ -44,8 +52,9 @@ resource "docker_image" "nginx" {
   name = "nginx:latest"
 }
 ```
+## Run your Terraform environment or something
 
-Initialize Terraform with the `init` command. This will install the AWS provider. 
+Initialize Terraform with the `init` command. Terraform will install the Docker provider.
 
 ```shell
 $ terraform init
