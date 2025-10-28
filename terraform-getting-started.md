@@ -1,12 +1,12 @@
 # Getting Started with Terraform
 
-Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC).
+Terraform is the most popular language for defining and provisioning infrastructure as code (IaC).
 
 To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
 
 With Terraform installed, let's dive right into it and start creating some infrastructure.
 
-Most guys find it easiest to create a new directory on there local machine and create Terraform configuration code inside it.
+Most people find it easiest to create a new directory on their local machine and create Terraform configuration code inside it.
 
 ```shell
 $ mkdir terraform-demo
@@ -45,7 +45,7 @@ resource "docker_image" "nginx" {
 }
 ```
 
-Initialize Terraform with the `init` command. The AWS provider will be installed. 
+Initialize Terraform with the `init` command. This will install the AWS provider. 
 
 ```shell
 $ terraform init
