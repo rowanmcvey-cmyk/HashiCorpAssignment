@@ -183,7 +183,7 @@ Finally, destroy the infrastructure.
 ```shell
 $ terraform destroy
 ```
-You should see this output:
+You should see output similar to this:
 
 ```shell
 docker_image.nginx: Refreshing state... [id=sha256:9d0e6f6199dcb6e045dad103064601d730fcfaf8d1bd357d969fb70bd5b90decnginx:latest]
@@ -285,7 +285,7 @@ Do you really want to destroy all resources?
 
 Type `yes` and hit ENTER to confirm. Terraform will destroy the resources it had created earlier.
 
-You should see this output:
+You should see output similar to this:
 
 ```shell
 docker_container.nginx: Destroying... [id=75a679d73f1a16faf64578e0592ebe202055a4d02110a981278d080c763daef3]
