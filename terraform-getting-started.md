@@ -1,14 +1,14 @@
-# Getting Started with Terraform
+# Getting started with Terraform
 
 Terraform is the most popular language for defining and provisioning infrastructure as code (IaC).
 
-## Learning Objectives
+## Learning objectives
 
 After you finish this lesson, you will be able to:
 - Install Terraform on your local machine
 - Create a basic Terraform configuration file
 - Initialize Terraform and install a Terraform provider
-- Provision and destroy Terraform resources
+- Provision and destroy resources using Terraform
 
 To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and find the appropriate installation package for your system. Download and install it.
 
@@ -52,15 +52,15 @@ resource "docker_image" "nginx" {
   name = "nginx:latest"
 }
 ```
-## Run your Terraform environment or something
+## Provision and destroy resources using Terraform
 
-Initialize Terraform with the `init` command. Terraform will install the Docker provider.
+Initialize Terraform with the `init` command. Terraform will install the Docker provider, as specified in the configuration file you created in the previous step.
 
 ```shell
 $ terraform init
 ```
 
-You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
+You should check for any errors. If the `init` command ran successfully, provision the resource with the `apply` command.
 
 ```shell
 $ terraform apply
